@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get     'about'          =>    'static_pages#about'
   get     'contact'        =>    'static_pages#contact'
   get     'signup'         =>    'users#new'
-  get     'user/:id/edit'  =>    'users#edit'
   get     'login'          =>    'sessions#new'
   post    'login'          =>    'sessions#create'
   delete  'logout'         =>    'sessions#destroy'
