@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
+  has_many :microposts, dependent: :destroy
+
   def self.new_token
     SecureRandom.urlsafe_base64
   end
@@ -68,6 +70,10 @@ class User < ActiveRecord::Base
 
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

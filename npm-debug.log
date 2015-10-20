@@ -1,0 +1,504 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'runas' ]
+2 info using npm@2.14.7
+3 info using node@v4.0.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'runas', null ]
+7 verbose cache add spec runas
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'runas',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'runas',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed runas@*
+10 verbose addNamed "*" is a valid semver range for runas
+11 silly addNameRange { name: 'runas', range: '*', hasData: false }
+12 silly mapToRegistry name runas
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/runas
+16 verbose addNameRange registry:https://registry.npmjs.org/runas not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/runas
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 10:35:20 PM
+20 verbose request id bd87bded18538e11
+21 http request GET https://registry.npmjs.org/runas
+22 http 200 https://registry.npmjs.org/runas
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"BRDZ5F429L2WZF1UUH84X8538"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=60',
+23 verbose headers   'content-length': '21039',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 20 Oct 2015 03:05:23 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-iad2125-IAD',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1445310323.888422,VS0,VE13',
+23 verbose headers   vary: 'Accept' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"BRDZ5F429L2WZF1UUH84X8538"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '21039',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 20 Oct 2015 03:05:23 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-iad2125-IAD',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1445310323.888422,VS0,VE13',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving runas to /Users/ivor/.npm/registry.npmjs.org/runas/.cache.json
+26 silly addNameRange number 2 { name: 'runas', range: '*', hasData: true }
+27 silly addNameRange versions [ 'runas',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '0.5.1',
+27 silly addNameRange     '0.5.2',
+27 silly addNameRange     '0.5.3',
+27 silly addNameRange     '0.5.4',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '2.0.0',
+27 silly addNameRange     '3.0.0',
+27 silly addNameRange     '3.1.0' ] ]
+28 silly addNamed runas@3.1.0
+29 verbose addNamed "3.1.0" is a plain semver version for runas
+30 silly mapToRegistry name runas
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/runas
+34 verbose addRemoteTarball https://registry.npmjs.org/runas/-/runas-3.1.0.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/runas/-/runas-3.1.0.tgz',
+35 verbose addRemoteTarball   '65801da8ebc2d31cd405f777ac096c92c1422bdd' ]
+36 info retry fetch attempt 1 at 10:35:24 PM
+37 info attempt registry request try #1 at 10:35:24 PM
+38 http fetch GET https://registry.npmjs.org/runas/-/runas-3.1.0.tgz
+39 http fetch 200 https://registry.npmjs.org/runas/-/runas-3.1.0.tgz
+40 silly fetchAndShaCheck shasum 65801da8ebc2d31cd405f777ac096c92c1422bdd
+41 verbose addTmpTarball /var/folders/dv/6q6tjvds4hx6_9j_6knpg1fr0000gn/T/npm-15549-e1cd7ca9/registry.npmjs.org/runas/-/runas-3.1.0.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for runas@3.1.0
+43 silly cache afterAdd runas@3.1.0
+44 verbose afterAdd /Users/ivor/.npm/runas/3.1.0/package/package.json not in flight; writing
+45 verbose afterAdd /Users/ivor/.npm/runas/3.1.0/package/package.json written
+46 silly install resolved [ { main: './lib/runas.js',
+46 silly install resolved     name: 'runas',
+46 silly install resolved     version: '3.1.0',
+46 silly install resolved     licenses: [ [Object] ],
+46 silly install resolved     repository: { type: 'git', url: 'https://github.com/atom/node-runas.git' },
+46 silly install resolved     bugs: { url: 'https://github.com/atom/node-runas/issues' },
+46 silly install resolved     scripts:
+46 silly install resolved      { prepublish: 'grunt coffee',
+46 silly install resolved        test: 'node node_modules/jasmine-focused/bin/jasmine-focused --captureExceptions --coffee spec',
+46 silly install resolved        install: 'node-gyp rebuild' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { 'jasmine-focused': '^1.0.5',
+46 silly install resolved        grunt: '~0.4.1',
+46 silly install resolved        'grunt-contrib-coffee': '~0.6.6',
+46 silly install resolved        'grunt-cli': '~0.1.7',
+46 silly install resolved        'grunt-shell': '~0.2.2',
+46 silly install resolved        'coffee-script': '~1.6.2',
+46 silly install resolved        'node-cpplint': '~0.1.5' },
+46 silly install resolved     dependencies: { nan: '2.x' },
+46 silly install resolved     gypfile: true,
+46 silly install resolved     gitHead: 'cd3b1b1deda5e9ffd3ac49bb44a1637173f5d083',
+46 silly install resolved     description: 'Run command synchronously with administrator privilege.',
+46 silly install resolved     homepage: 'https://github.com/atom/node-runas',
+46 silly install resolved     _id: 'runas@3.1.0',
+46 silly install resolved     _shasum: '65801da8ebc2d31cd405f777ac096c92c1422bdd',
+46 silly install resolved     _from: 'runas@*',
+46 silly install resolved     _npmVersion: '2.7.3',
+46 silly install resolved     _nodeVersion: '0.12.0',
+46 silly install resolved     _npmUser: { name: 'zcbenz', email: 'zcbenz@gmail.com' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '65801da8ebc2d31cd405f777ac096c92c1422bdd',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/runas/-/runas-3.1.0.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/runas/-/runas-3.1.0.tgz' } ]
+47 info install runas@3.1.0 into /usr/local/lib
+48 info installOne runas@3.1.0
+49 verbose installOne of runas to /usr/local/lib not in flight; installing
+50 verbose lock using /Users/ivor/.npm/_locks/runas-4cb91586af00fd79.lock for /usr/local/lib/node_modules/runas
+51 silly install write writing runas 3.1.0 to /usr/local/lib/node_modules/runas
+52 verbose unbuild lib/node_modules/runas
+53 silly gentlyRm /usr/local/lib/node_modules/runas is being purged from base /usr/local
+54 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/runas
+55 verbose tar unpack /Users/ivor/.npm/runas/3.1.0/package.tgz
+56 verbose tar unpacking to /usr/local/lib/node_modules/runas
+57 silly gentlyRm /usr/local/lib/node_modules/runas is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/runas
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry test.js
+63 silly gunzTarPerm extractEntry LICENSE.md
+64 silly gunzTarPerm extractEntry binding.gyp
+65 silly gunzTarPerm extractEntry .travis.yml
+66 silly gunzTarPerm extractEntry lib/runas.js
+67 silly gunzTarPerm extractEntry src/fork.cc
+68 silly gunzTarPerm extractEntry src/fork.h
+69 silly gunzTarPerm extractEntry src/main.cc
+70 silly gunzTarPerm extractEntry src/runas.h
+71 silly gunzTarPerm extractEntry src/runas_darwin.cc
+72 silly gunzTarPerm extractEntry src/runas_posix.cc
+73 silly gunzTarPerm extractEntry src/runas_win.cc
+74 verbose write writing to /usr/local/lib/node_modules/runas/package.json
+75 info preinstall runas@3.1.0
+76 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/runas/package.json
+77 silly prepareForInstallMany adding nan@2.x from runas dependencies
+78 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/runas/package.json
+79 silly cache add args [ 'nan@2.x', null ]
+80 verbose cache add spec nan@2.x
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'nan@2.x',
+81 silly cache add   scope: null,
+81 silly cache add   name: 'nan',
+81 silly cache add   rawSpec: '2.x',
+81 silly cache add   spec: '>=2.0.0 <3.0.0',
+81 silly cache add   type: 'range' }
+82 silly addNamed nan@>=2.0.0 <3.0.0
+83 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for nan
+84 silly addNameRange { name: 'nan', range: '>=2.0.0 <3.0.0', hasData: false }
+85 silly mapToRegistry name nan
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry uri https://registry.npmjs.org/nan
+89 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+90 verbose request uri https://registry.npmjs.org/nan
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 10:35:25 PM
+93 http request GET https://registry.npmjs.org/nan
+94 http 200 https://registry.npmjs.org/nan
+95 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+95 verbose headers   etag: '"EEJEYBDBWDA07LWTXUI68JUWL"',
+95 verbose headers   'content-type': 'application/json',
+95 verbose headers   'cache-control': 'max-age=60',
+95 verbose headers   'content-length': '100017',
+95 verbose headers   'accept-ranges': 'bytes',
+95 verbose headers   date: 'Tue, 20 Oct 2015 03:05:25 GMT',
+95 verbose headers   via: '1.1 varnish',
+95 verbose headers   age: '15',
+95 verbose headers   connection: 'keep-alive',
+95 verbose headers   'x-served-by': 'cache-iad2128-IAD',
+95 verbose headers   'x-cache': 'HIT',
+95 verbose headers   'x-cache-hits': '1',
+95 verbose headers   'x-timer': 'S1445310325.294496,VS0,VE0',
+95 verbose headers   vary: 'Accept' }
+96 silly get cb [ 200,
+96 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+96 silly get     etag: '"EEJEYBDBWDA07LWTXUI68JUWL"',
+96 silly get     'content-type': 'application/json',
+96 silly get     'cache-control': 'max-age=60',
+96 silly get     'content-length': '100017',
+96 silly get     'accept-ranges': 'bytes',
+96 silly get     date: 'Tue, 20 Oct 2015 03:05:25 GMT',
+96 silly get     via: '1.1 varnish',
+96 silly get     age: '15',
+96 silly get     connection: 'keep-alive',
+96 silly get     'x-served-by': 'cache-iad2128-IAD',
+96 silly get     'x-cache': 'HIT',
+96 silly get     'x-cache-hits': '1',
+96 silly get     'x-timer': 'S1445310325.294496,VS0,VE0',
+96 silly get     vary: 'Accept' } ]
+97 verbose get saving nan to /Users/ivor/.npm/registry.npmjs.org/nan/.cache.json
+98 silly addNameRange number 2 { name: 'nan', range: '>=2.0.0 <3.0.0', hasData: true }
+99 silly addNameRange versions [ 'nan',
+99 silly addNameRange   [ '0.3.0-wip',
+99 silly addNameRange     '0.3.0-wip2',
+99 silly addNameRange     '0.3.0',
+99 silly addNameRange     '0.3.1',
+99 silly addNameRange     '0.3.2',
+99 silly addNameRange     '0.4.0',
+99 silly addNameRange     '0.4.1',
+99 silly addNameRange     '0.4.2',
+99 silly addNameRange     '0.4.3',
+99 silly addNameRange     '0.4.4',
+99 silly addNameRange     '0.5.0',
+99 silly addNameRange     '0.5.1',
+99 silly addNameRange     '0.5.2',
+99 silly addNameRange     '0.6.0',
+99 silly addNameRange     '0.7.0',
+99 silly addNameRange     '0.7.1',
+99 silly addNameRange     '0.8.0',
+99 silly addNameRange     '1.0.0',
+99 silly addNameRange     '1.1.0',
+99 silly addNameRange     '1.1.1',
+99 silly addNameRange     '1.1.2',
+99 silly addNameRange     '1.2.0',
+99 silly addNameRange     '1.3.0',
+99 silly addNameRange     '1.4.0',
+99 silly addNameRange     '1.4.1',
+99 silly addNameRange     '1.5.0',
+99 silly addNameRange     '1.4.2',
+99 silly addNameRange     '1.4.3',
+99 silly addNameRange     '1.5.1',
+99 silly addNameRange     '1.5.2',
+99 silly addNameRange     '1.6.0',
+99 silly addNameRange     '1.5.3',
+99 silly addNameRange     '1.6.1',
+99 silly addNameRange     '1.6.2',
+99 silly addNameRange     '1.7.0',
+99 silly addNameRange     '1.8.0',
+99 silly addNameRange     '1.8.1',
+99 silly addNameRange     '1.8.2',
+99 silly addNameRange     '1.8.3',
+99 silly addNameRange     '1.8.4',
+99 silly addNameRange     '1.9.0',
+99 silly addNameRange     '2.0.0',
+99 silly addNameRange     '2.0.1',
+99 silly addNameRange     '2.0.2',
+99 silly addNameRange     '2.0.3',
+99 silly addNameRange     '2.0.4',
+99 silly addNameRange     '2.0.5',
+99 silly addNameRange     '2.0.6',
+99 silly addNameRange     '2.0.7',
+99 silly addNameRange     '2.0.8',
+99 silly addNameRange     '2.0.9',
+99 silly addNameRange     '2.1.0' ] ]
+100 silly addNamed nan@2.1.0
+101 verbose addNamed "2.1.0" is a plain semver version for nan
+102 silly mapToRegistry name nan
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/nan
+106 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.1.0.tgz not in flight; adding
+107 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.1.0.tgz',
+107 verbose addRemoteTarball   '020a7ccedc63fdee85f85967d5607849e74abbe8' ]
+108 info retry fetch attempt 1 at 10:35:26 PM
+109 info attempt registry request try #1 at 10:35:26 PM
+110 http fetch GET https://registry.npmjs.org/nan/-/nan-2.1.0.tgz
+111 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.1.0.tgz
+112 silly fetchAndShaCheck shasum 020a7ccedc63fdee85f85967d5607849e74abbe8
+113 verbose addTmpTarball /var/folders/dv/6q6tjvds4hx6_9j_6knpg1fr0000gn/T/npm-15549-e1cd7ca9/registry.npmjs.org/nan/-/nan-2.1.0.tgz not in flight; adding
+114 verbose addTmpTarball already have metadata; skipping unpack for nan@2.1.0
+115 silly cache afterAdd nan@2.1.0
+116 verbose afterAdd /Users/ivor/.npm/nan/2.1.0/package/package.json not in flight; writing
+117 verbose afterAdd /Users/ivor/.npm/nan/2.1.0/package/package.json written
+118 silly install resolved [ { name: 'nan',
+118 silly install resolved     version: '2.1.0',
+118 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 4 compatibility',
+118 silly install resolved     main: 'include_dirs.js',
+118 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+118 silly install resolved     scripts:
+118 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+118 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+118 silly install resolved        docs: 'doc/.build.sh' },
+118 silly install resolved     contributors:
+118 silly install resolved      [ [Object],
+118 silly install resolved        [Object],
+118 silly install resolved        [Object],
+118 silly install resolved        [Object],
+118 silly install resolved        [Object],
+118 silly install resolved        [Object],
+118 silly install resolved        [Object] ],
+118 silly install resolved     devDependencies:
+118 silly install resolved      { bindings: '~1.2.1',
+118 silly install resolved        commander: '^2.8.1',
+118 silly install resolved        glob: '^5.0.14',
+118 silly install resolved        'node-gyp': '~3.0.1',
+118 silly install resolved        tap: '~0.7.1',
+118 silly install resolved        xtend: '~4.0.0' },
+118 silly install resolved     license: 'MIT',
+118 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+118 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+118 silly install resolved     _id: 'nan@2.1.0',
+118 silly install resolved     _shasum: '020a7ccedc63fdee85f85967d5607849e74abbe8',
+118 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.1.0.tgz',
+118 silly install resolved     _from: 'nan@>=2.0.0 <3.0.0',
+118 silly install resolved     _npmVersion: '3.3.5',
+118 silly install resolved     _nodeVersion: '4.1.2',
+118 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+118 silly install resolved     dist:
+118 silly install resolved      { shasum: '020a7ccedc63fdee85f85967d5607849e74abbe8',
+118 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.1.0.tgz' },
+118 silly install resolved     maintainers: [ [Object], [Object] ],
+118 silly install resolved     directories: {} } ]
+119 info install nan@2.1.0 into /usr/local/lib/node_modules/runas
+120 info installOne nan@2.1.0
+121 verbose installOne of nan to /usr/local/lib/node_modules/runas not in flight; installing
+122 verbose lock using /Users/ivor/.npm/_locks/nan-3dd8d9d366852889.lock for /usr/local/lib/node_modules/runas/node_modules/nan
+123 silly install write writing nan 2.1.0 to /usr/local/lib/node_modules/runas/node_modules/nan
+124 verbose unbuild lib/node_modules/runas/node_modules/nan
+125 silly gentlyRm /usr/local/lib/node_modules/runas/node_modules/nan is being purged from base /usr/local
+126 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/runas/node_modules/nan
+127 verbose tar unpack /Users/ivor/.npm/nan/2.1.0/package.tgz
+128 verbose tar unpacking to /usr/local/lib/node_modules/runas/node_modules/nan
+129 silly gentlyRm /usr/local/lib/node_modules/runas/node_modules/nan is being purged
+130 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/runas/node_modules/nan
+131 silly gunzTarPerm modes [ '755', '644' ]
+132 silly gunzTarPerm extractEntry package.json
+133 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+134 silly gunzTarPerm extractEntry README.md
+135 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+136 silly gunzTarPerm extractEntry include_dirs.js
+137 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+138 silly gunzTarPerm extractEntry nan_converters.h
+139 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+140 silly gunzTarPerm extractEntry LICENSE.md
+141 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+142 silly gunzTarPerm extractEntry .dntrc
+143 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+144 silly gunzTarPerm extractEntry appveyor.yml
+145 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+146 silly gunzTarPerm extractEntry doc/new.md
+147 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+148 silly gunzTarPerm extractEntry doc/.build.sh
+149 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 493 ]
+150 silly gunzTarPerm extractEntry doc/buffers.md
+151 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+152 silly gunzTarPerm extractEntry doc/callback.md
+153 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+154 silly gunzTarPerm extractEntry doc/converters.md
+155 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+156 silly gunzTarPerm extractEntry doc/errors.md
+157 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+158 silly gunzTarPerm extractEntry doc/maybe_types.md
+159 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+160 silly gunzTarPerm extractEntry doc/methods.md
+161 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+162 silly gunzTarPerm extractEntry doc/asyncworker.md
+163 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+164 silly gunzTarPerm extractEntry doc/node_misc.md
+165 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+166 silly gunzTarPerm extractEntry doc/persistent.md
+167 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+168 silly gunzTarPerm extractEntry doc/scopes.md
+169 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+170 silly gunzTarPerm extractEntry doc/script.md
+171 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+172 silly gunzTarPerm extractEntry doc/string_bytes.md
+173 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+174 silly gunzTarPerm extractEntry doc/v8_internals.md
+175 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+176 silly gunzTarPerm extractEntry doc/v8_misc.md
+177 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+178 silly gunzTarPerm extractEntry nan.h
+179 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+180 silly gunzTarPerm extractEntry nan_callbacks.h
+181 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+182 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+183 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+184 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+185 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+186 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+187 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+188 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+189 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+190 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+191 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+192 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+193 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+194 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+195 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+196 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+197 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+198 silly gunzTarPerm extractEntry nan_new.h
+199 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+200 silly gunzTarPerm extractEntry nan_object_wrap.h
+201 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+202 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+203 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+204 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+205 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+206 silly gunzTarPerm extractEntry nan_string_bytes.h
+207 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+208 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+209 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+210 silly gunzTarPerm extractEntry nan_weak.h
+211 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+212 silly gunzTarPerm extractEntry CHANGELOG.md
+213 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+214 silly gunzTarPerm extractEntry tools/package.json
+215 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+216 silly gunzTarPerm extractEntry tools/README.md
+217 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+218 silly gunzTarPerm extractEntry tools/1to2.js
+219 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+220 verbose write writing to /usr/local/lib/node_modules/runas/node_modules/nan/package.json
+221 info preinstall nan@2.1.0
+222 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/runas/node_modules/nan/package.json
+223 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/runas/node_modules/nan/package.json
+224 silly install resolved []
+225 verbose about to build /usr/local/lib/node_modules/runas/node_modules/nan
+226 info build /usr/local/lib/node_modules/runas/node_modules/nan
+227 info linkStuff nan@2.1.0
+228 silly linkStuff nan@2.1.0 has /usr/local/lib/node_modules/runas/node_modules as its parent node_modules
+229 silly linkStuff nan@2.1.0 is part of a global install
+230 silly linkStuff nan@2.1.0 is installed into a global node_modules
+231 verbose linkBins nan@2.1.0
+232 verbose linkMans nan@2.1.0
+233 verbose rebuildBundles nan@2.1.0
+234 info install nan@2.1.0
+235 info postinstall nan@2.1.0
+236 verbose unlock done using /Users/ivor/.npm/_locks/nan-3dd8d9d366852889.lock for /usr/local/lib/node_modules/runas/node_modules/nan
+237 verbose about to build /usr/local/lib/node_modules/runas
+238 info build /usr/local/lib/node_modules/runas
+239 info linkStuff runas@3.1.0
+240 silly linkStuff runas@3.1.0 has /usr/local/lib/node_modules as its parent node_modules
+241 silly linkStuff runas@3.1.0 is part of a global install
+242 silly linkStuff runas@3.1.0 is installed into a global node_modules
+243 silly linkStuff runas@3.1.0 is installed into the top-level global node_modules
+244 verbose linkBins runas@3.1.0
+245 verbose linkMans runas@3.1.0
+246 verbose rebuildBundles runas@3.1.0
+247 verbose rebuildBundles [ 'nan' ]
+248 info install runas@3.1.0
+249 verbose unsafe-perm in lifecycle true
+250 info runas@3.1.0 Failed to exec install script
+251 verbose unlock done using /Users/ivor/.npm/_locks/runas-4cb91586af00fd79.lock for /usr/local/lib/node_modules/runas
+252 verbose stack Error: runas@3.1.0 install: `node-gyp rebuild`
+252 verbose stack Exit status 1
+252 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+252 verbose stack     at emitTwo (events.js:87:13)
+252 verbose stack     at EventEmitter.emit (events.js:172:7)
+252 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+252 verbose stack     at emitTwo (events.js:87:13)
+252 verbose stack     at ChildProcess.emit (events.js:172:7)
+252 verbose stack     at maybeClose (internal/child_process.js:817:16)
+252 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+253 verbose pkgid runas@3.1.0
+254 verbose cwd /Users/ivor/workspace/projects/railstutorial
+255 error Darwin 15.0.0
+256 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "runas"
+257 error node v4.0.0
+258 error npm  v2.14.7
+259 error code ELIFECYCLE
+260 error runas@3.1.0 install: `node-gyp rebuild`
+260 error Exit status 1
+261 error Failed at the runas@3.1.0 install script 'node-gyp rebuild'.
+261 error This is most likely a problem with the runas package,
+261 error not with npm itself.
+261 error Tell the author that this fails on your system:
+261 error     node-gyp rebuild
+261 error You can get their info via:
+261 error     npm owner ls runas
+261 error There is likely additional logging output above.
+262 verbose exit [ 1, true ]
+263 verbose unbuild lib/node_modules/runas
+264 info preuninstall runas@3.1.0
+265 info uninstall runas@3.1.0
+266 verbose unbuild rmStuff runas@3.1.0 from /usr/local/lib/node_modules
+267 info postuninstall runas@3.1.0
+268 silly gentlyRm /usr/local/lib/node_modules/runas is being purged from base /usr/local
+269 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/runas
+270 silly vacuum-fs purging /usr/local/lib/node_modules/runas
+271 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
